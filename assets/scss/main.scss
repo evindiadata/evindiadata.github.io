@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+// 0. Angular Material Theme
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 // 1. Configuration and helpers
 @import
   'abstracts/variables',
@@ -12,6 +15,7 @@
 
 // 3. Base stuff
 @import
+  'base/_reset.css',
   'base/base',
   'base/fonts',
   'base/typography',
@@ -19,13 +23,15 @@
 
 // 4. Layout-related sections
 @import
-  'layout/header',
+  'layout/navbar',
   'layout/footer';
 
 // 5. Components
 @import
   'components/button',
-  'components/table';
+  'components/landing-header',
+  'components/vehicle-table',
+  'components/vehicle-card';
 
 // 6. Page-specific styles
 @import
